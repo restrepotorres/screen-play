@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="Autenticarse" skipped="0" tests="2" time="0.62" timestamp="2024-11-07 09:31:30"><testcase name="El usuario se auntentica con credenciales validas"/><testcase name="El usuario se auntentica con credenciales NO validas"/></testsuite>

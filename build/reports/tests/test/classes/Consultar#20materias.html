@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class Consultar materias</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class Consultar materias</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; Consultar materias</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">3</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">2</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">3.117s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">33%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="El usuario busca la informacion de todas las materias"></a>
+<h3 class="failures">El usuario busca la informacion de todas las materias</h3>
+<span class="code">
+<pre>java.lang.AssertionError: 1 expectation failed.
+JSON path [0].id doesn't match.
+Expected: 2508120
+  Actual: l1
+
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:38)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:32)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:397)
+	at com.toolbox.toolbox.stepdefinitions.SubjectStepDefinition.allSubjectsInfo(SubjectStepDefinition.java:68)
+	at ✽.el sistema responde con una lista con la informacion de todas las materias(file:///D:/GitHub/screenplay/src/test/resources/features/get_subject.feature:9)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="El usuario busca una materia existente por su codigo"></a>
+<h3 class="failures">El usuario busca una materia existente por su codigo</h3>
+<span class="code">
+<pre>java.lang.AssertionError: 1 expectation failed.
+JSON path name   doesn't match.
+Expected: Descubriendo la Física
+  Actual: Lógica 1
+
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:38)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:32)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:397)
+	at com.toolbox.toolbox.stepdefinitions.SubjectStepDefinition.subjectInfo(SubjectStepDefinition.java:49)
+	at ✽.el sistema responde con la informacion detallada de la materia(file:///D:/GitHub/screenplay/src/test/resources/features/get_subject.feature:14)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="failures">El usuario busca la informacion de todas las materias</td>
+<td class="failures">2.880s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">El usuario busca una materia existente por su codigo</td>
+<td class="failures">0.147s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">El usuario busca una materia inexistente por código</td>
+<td class="success">0.090s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+El usuario busca la informacion de todas las materias(consultar-materias;el-usuario-busca-la-informacion-de-todas-las-materias)
+--------------------------------------------------------------------------------
+[Test worker] ERROR  - 
+  _____   ___   ___   _____     ___     _     ___   _      ___   ___  
+ |_   _| | __| / __| |_   _|   | __|   /_\   |_ _| | |    | __| |   \ 
+   | |   | _|  \__ \   | |     | _|   / _ \   | |  | |__  | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___| |____| |___| |___/ 
+
+El usuario busca la informacion de todas las materias
+-----------------------------------------------------------------------
+[Test worker] ERROR  -     Test failed at step: A valid response is returned
+[Test worker] ERROR  -     1 expectation failed.JSON path [0].id doesn't match.Expected: 2508120  Actual: l1
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+El usuario busca una materia existente por su codigo(consultar-materias;el-usuario-busca-una-materia-existente-por-su-codigo)
+--------------------------------------------------------------------------------
+[Test worker] ERROR  - 
+  _____   ___   ___   _____     ___     _     ___   _      ___   ___  
+ |_   _| | __| / __| |_   _|   | __|   /_\   |_ _| | |    | __| |   \ 
+   | |   | _|  \__ \   | |     | _|   / _ \   | |  | |__  | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___| |____| |___| |___/ 
+
+El usuario busca una materia existente por su codigo
+-----------------------------------------------------------------------
+[Test worker] ERROR  -     Test failed at step: A valid response is returned
+[Test worker] ERROR  -     1 expectation failed.JSON path name   doesn't match.Expected: Descubriendo la Física  Actual: Lógica 1
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+El usuario busca una materia inexistente por código(consultar-materias;el-usuario-busca-una-materia-inexistente-por-código)
+--------------------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+El usuario busca una materia inexistente por código
+----------------------------------------------------------------------
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.5</a> at 7/11/2024, 9:40:23 p. m.</p>
+</div>
+</div>
+</body>
+</html>

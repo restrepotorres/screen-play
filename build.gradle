@@ -14,7 +14,7 @@ plugins {
 
 group 'com.toolbox'
 
-sourceCompatibility = 11
+sourceCompatibility = 17
 
 repositories {
 

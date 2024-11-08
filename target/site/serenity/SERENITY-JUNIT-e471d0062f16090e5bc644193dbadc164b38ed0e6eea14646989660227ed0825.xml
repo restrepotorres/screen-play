@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="2" name="Consultar materias" skipped="0" tests="3" time="0.67" timestamp="2024-11-07 09:40:20"><testcase name="El usuario busca la informacion de todas las materias"><failure message="1 expectation failed.&#10;JSON path [0].id doesn't match.&#10;Expected: 2508120&#10;  Actual: l1&#10;" type="java.lang.AssertionError">1 expectation failed.
+JSON path [0].id doesn't match.
+Expected: 2508120
+  Actual: l1
+</failure><system-err>1 expectation failed.
+JSON path [0].id doesn't match.
+Expected: 2508120
+  Actual: l1
+&#13;
+io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)&#13;
+io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)&#13;
+io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:270)&#13;
+io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:117)&#13;
+io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)&#13;
+com.toolbox.toolbox.stepdefinitions.SubjectStepDefinition.lambda$allSubjectsInfo$2(SubjectStepDefinition.java:69)&#13;
+com.toolbox.toolbox.stepdefinitions.SubjectStepDefinition.allSubjectsInfo(SubjectStepDefinition.java:68)&#13;
+worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)&#13;
+worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)&#13;
+</system-err></testcase><testcase name="El usuario busca una materia existente por su codigo"><failure message="1 expectation failed.&#10;JSON path name   doesn't match.&#10;Expected: Descubriendo la Física&#10;  Actual: Lógica 1&#10;" type="java.lang.AssertionError">1 expectation failed.
+JSON path name   doesn't match.
+Expected: Descubriendo la Física
+  Actual: Lógica 1
+</failure><system-err>1 expectation failed.
+JSON path name   doesn't match.
+Expected: Descubriendo la Física
+  Actual: Lógica 1
+&#13;
+io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)&#13;
+io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)&#13;
+io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:270)&#13;
+io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:117)&#13;
+io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)&#13;
+com.toolbox.toolbox.stepdefinitions.SubjectStepDefinition.lambda$subjectInfo$0(SubjectStepDefinition.java:50)&#13;
+com.toolbox.toolbox.stepdefinitions.SubjectStepDefinition.subjectInfo(SubjectStepDefinition.java:49)&#13;
+worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)&#13;
+worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)&#13;
+</system-err></testcase><testcase name="El usuario busca una materia inexistente por código"/></testsuite>

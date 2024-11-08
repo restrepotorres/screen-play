@@ -1,4 +1,4 @@
-Feature: Consultar una materia
+Feature: Consultar materias
   Como usuario del portal, quiero consultar la información
   relacionada con las materias de la carrera de ingeniería de sistemas
   para obtener detalles específicos de cada materia.
