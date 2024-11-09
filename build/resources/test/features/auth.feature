@@ -4,11 +4,11 @@ Feature: Autenticarse
 
   Scenario: El usuario se auntentica con credenciales validas
     Given el usuario esta en la pagina de login
-    When el usuario ingresa un  usuario y contrasena "victor" y "1234"
+    When el usuario ingresa un  usuario y contrasena validos
     Then el sistema responde con un codigo de aceptacion y su token
 
 
   Scenario: El usuario se auntentica con credenciales NO validas
     Given el usuario esta en la pagina de login
-    When el usuario ingresa un  usuario y contrasena "xxxx" y "xxxx"
+    When el usuario ingresa un  usuario y contrasena invalidos
     Then el sistema responde con un codigo de rechazo por inhautorizacion

@@ -28,7 +28,6 @@ public class DeleteStepDefinition {
     @When("el usuario la solicitud para eliminar la materias con id {string}")
     public void elUsuarioLaSolicitudParaEliminarLaMateriasConId(String arg0) {
         String jwtToken = LastResponse.received().answeredBy(usuario).path("accessToken").toString();
-        System.out.println(jwtToken);
         usuario.attemptsTo(DeleteSubject.withId(jwtToken, arg0));
 
     }

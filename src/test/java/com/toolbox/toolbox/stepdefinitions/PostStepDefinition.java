@@ -13,17 +13,20 @@ import com.toolbox.toolbox.tasks.ValidateCredentials;
 import io.cucumber.java.en.When;
 import net.serenitybdd.screenplay.rest.abilities.CallAnApi;
 import net.serenitybdd.screenplay.rest.questions.LastResponse;
+import net.thucydides.model.environment.SystemEnvironmentVariables;
+import net.thucydides.model.util.EnvironmentVariables;
 
 import static net.serenitybdd.screenplay.rest.questions.ResponseConsequence.seeThatResponse;
 import static org.hamcrest.Matchers.containsString;
 public class PostStepDefinition {
     Actor usuario = Actor.named("usuario");
     String jwtToken;
+    private final EnvironmentVariables environmentVariables= SystemEnvironmentVariables.createEnvironmentVariables();
     @Before
     public void config(){
         OnStage.setTheStage(new OnlineCast());
         OnStage.theActorCalled("user");
-        usuario.can(CallAnApi.at("http://localhost:8090/toolbox/api/v1/"));
+        usuario.can(CallAnApi.at(environmentVariables.getProperty("webdriver.base.url")));
     }
 
 

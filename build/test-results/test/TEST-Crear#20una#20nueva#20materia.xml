@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Autenticarse" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-11-09T01:17:43" hostname="FEMPUTADORA" time="2.794">
+<testsuite name="Crear una nueva materia" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-11-09T01:45:43" hostname="FEMPUTADORA" time="2.895">
   <properties/>
-  <testcase name="El usuario se auntentica con credenciales validas" classname="Autenticarse" time="2.638"/>
-  <testcase name="El usuario se auntentica con credenciales NO validas" classname="Autenticarse" time="0.156"/>
+  <testcase name="El usuario crea una materia estando logueado y con datos validos" classname="Crear una nueva materia" time="2.775"/>
+  <testcase name="El usuario crea una materia sin estar logueado" classname="Crear una nueva materia" time="0.12"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[[Test worker] INFO  - 
   _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
@@ -10,7 +10,7 @@
    | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
    |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
 
-El usuario se auntentica con credenciales validas(autenticarse;el-usuario-se-auntentica-con-credenciales-validas)
+El usuario crea una materia estando logueado y con datos validos(crear-una-nueva-materia;el-usuario-crea-una-materia-estando-logueado-y-con-datos-validos)
 --------------------------------------------------------------------------------
 [Test worker] INFO  - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
@@ -18,7 +18,7 @@ El usuario se auntentica con credenciales validas(autenticarse;el-usuario-se-aun
    | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
    |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
 
-El usuario se auntentica con credenciales validas
+El usuario crea una materia estando logueado y con datos validos
 ----------------------------------------------------------------------
 [Test worker] INFO  - 
   _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
@@ -26,7 +26,7 @@ El usuario se auntentica con credenciales validas
    | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
    |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
 
-El usuario se auntentica con credenciales NO validas(autenticarse;el-usuario-se-auntentica-con-credenciales-no-validas)
+El usuario crea una materia sin estar logueado(crear-una-nueva-materia;el-usuario-crea-una-materia-sin-estar-logueado)
 --------------------------------------------------------------------------------
 [Test worker] INFO  - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
@@ -34,7 +34,7 @@ El usuario se auntentica con credenciales NO validas(autenticarse;el-usuario-se-
    | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
    |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
 
-El usuario se auntentica con credenciales NO validas
+El usuario crea una materia sin estar logueado
 ----------------------------------------------------------------------
 ]]></system-err>
 </testsuite>
