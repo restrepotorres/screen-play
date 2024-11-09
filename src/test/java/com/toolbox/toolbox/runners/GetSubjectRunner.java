@@ -10,4 +10,4 @@ import org.junit.runner.RunWith;
         glue = "com.toolbox.toolbox.stepdefinitions",
         snippets = CucumberOptions.SnippetType.CAMELCASE
 )
-public class SubjectRunner {}
+public class GetSubjectRunner {}

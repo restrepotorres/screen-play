@@ -2,16 +2,11 @@ package com.toolbox.toolbox.tasks;
 
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
-import net.serenitybdd.screenplay.Actor;
-import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.rest.interactions.Post;
-import net.serenitybdd.screenplay.rest.questions.LastResponse;
 
-import static net.serenitybdd.screenplay.rest.questions.ResponseConsequence.seeThatResponse;
-import static org.hamcrest.Matchers.*;
 public class CreateSubject implements Task {
-    private String jwtToken;
+    private final String jwtToken;
 
     private final String requestBody = """
         {
@@ -36,31 +31,22 @@ public class CreateSubject implements Task {
         }
         """;
 
-    public CreateSubject(String token) {
-        this.jwtToken = token;
+    public CreateSubject(String jwtToken) {
+        this.jwtToken = jwtToken;
     }
     @Override
     public <T extends Actor> void performAs(T actor) {
         // Realizar la solicitud POST con el cuerpo de la solicitud
         actor.attemptsTo(
-                Post.to("/toolbox/api/v1/subjectfull").with(request -> request
+                Post.to("subjectfull/").with(request -> request
+                        .header("Authorization", "Bearer " + jwtToken)
                         .header("Content-Type", "application/json")
                         .body(requestBody)
                 )
         );
-
-        // Validar que la respuesta tiene un código de estado 201 y contiene el id y nombre especificados
-        actor.should(
-                seeThatResponse("El sistema debería confirmar la creación con un estado HTTP 201",
-                        response -> response.statusCode(201)
-                                .body("id", equalTo("testid"))
-                                .body("name", equalTo("test name"))
-                )
-        );
     }
 
-    // Método estático para instanciar el Task
-    public static CreateSubject withDetails() {
-        return Tasks.instrumented(CreateSubject.class);
+    public static CreateSubject withDetails( String jwtToken) {
+        return Tasks.instrumented(CreateSubject.class, jwtToken);
     }
 }

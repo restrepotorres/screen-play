@@ -10,7 +10,7 @@ Feature: Consultar materias
 
   Scenario:  El usuario busca una materia existente por su codigo
     Given dado que el usuario esta conectado la plataforma toolbox
-    When el usuario ingresa el codigo de la materia "2536101"
+    When el usuario ingresa el codigo de la materia "l1"
     Then el sistema responde con la informacion detallada de la materia
 
   Scenario: El usuario busca una materia inexistente por código

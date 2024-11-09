@@ -17,7 +17,7 @@ import static io.restassured.config.DecoderConfig.decoderConfig;
 import static io.restassured.config.EncoderConfig.encoderConfig;
 import static net.serenitybdd.screenplay.rest.questions.ResponseConsequence.seeThatResponse;
 
-public class SubjectStepDefinition {
+public class GetSubjectStepDefinition {
     Actor usuario = Actor.named("usuario");
 
     @Before
@@ -44,7 +44,7 @@ public class SubjectStepDefinition {
 
     @Then("el sistema responde con la informacion detallada de la materia")
     public void subjectInfo() {
-        String valorEsperado = new String("Descubriendo la Física".getBytes(), StandardCharsets.UTF_8);
+        String valorEsperado = new String("Lógica 1".getBytes(), StandardCharsets.UTF_8);
 
         usuario.should(seeThatResponse(response -> response.statusCode(200).
                 body("name  ", Matchers.equalTo(valorEsperado))
@@ -66,7 +66,7 @@ public class SubjectStepDefinition {
     @Then("el sistema responde con una lista con la informacion de todas las materias")
     public void allSubjectsInfo() {
         usuario.should(seeThatResponse(response -> response.statusCode(200)
-             .body("[0].id", Matchers.equalTo("2508120"))
+             .body("[0].id", Matchers.equalTo("l1"))
         ));
     }
 }

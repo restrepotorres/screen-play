@@ -19,13 +19,14 @@ public class AuthStepDefinition {
 
     @Before
     public void config(){
+
         OnStage.setTheStage(new OnlineCast());
         OnStage.theActorCalled("user");
     }
 
     @Given("el usuario esta en la pagina de login")
     public void dadoQueElUsuarioIngresaUnParValidos() {
-        usuario.attemptsTo(ConnectTo.theService());usuario.attemptsTo(ConnectTo.theService());
+        usuario.attemptsTo(ConnectTo.theService());
     }
 
     @When("el usuario ingresa un  usuario y contrasena {string} y {string}")
